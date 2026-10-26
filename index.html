@@ -1197,7 +1197,7 @@
   // Submit via fetch: the thank-you page counts a lead only after Netlify confirms the POST succeeded.
   // A failed POST sets no flag and never reaches /thank-you, so it cannot count as a conversion.
   // Without JS the form still posts normally to Netlify (no event fires - undercount, never a false lead).
-  document.querySelectorAll('form[netlify]').forEach(function(f) {
+  document.querySelectorAll('form[name="audit-request"], form[name="class-inquiry"]').forEach(function(f) {
     f.addEventListener('submit', function(e) {
       e.preventDefault();
       var data = new FormData(f);
