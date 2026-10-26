@@ -652,10 +652,25 @@
 </script>
 
 <script>
-  // Mark a real form submission so the thank-you page can count it as a lead exactly once.
+  // Submit via fetch: the thank-you page counts a lead only after Netlify confirms the POST succeeded.
+  // A failed POST sets no flag and never reaches /thank-you, so it cannot count as a conversion.
+  // Without JS the form still posts normally to Netlify (no event fires - undercount, never a false lead).
   document.querySelectorAll('form[netlify]').forEach(function(f) {
-    f.addEventListener('submit', function() {
-      try { sessionStorage.setItem('fa_lead_form', JSON.stringify({ form: f.getAttribute('name'), t: Date.now() })); } catch (e) {}
+    f.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(f);
+      if (!data.get('form-name')) data.append('form-name', f.getAttribute('name'));
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      }).then(function(res) {
+        if (!res.ok) throw new Error('Submission failed with status ' + res.status);
+        try { sessionStorage.setItem('fa_lead_form', JSON.stringify({ form: f.getAttribute('name'), t: Date.now() })); } catch (e2) {}
+        window.location.assign('/thank-you');
+      }).catch(function() {
+        alert('Sorry, something went wrong sending your message. Please email max@fihmaadvisory.com directly.');
+      });
     });
   });
 </script>
