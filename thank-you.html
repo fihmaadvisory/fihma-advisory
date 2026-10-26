@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Thank You — Fihma Advisory</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1C558CYB9J');
+  // Count a lead only when this page follows a real form submission, exactly once.
+  // Direct visits and reloads do not fire the event.
+  try {
+    var raw = sessionStorage.getItem('fa_lead_form');
+    if (raw) {
+      sessionStorage.removeItem('fa_lead_form');
+      var lead = JSON.parse(raw);
+      // Fire only within 2 minutes of the submit that set the flag, so a
+      // failed submission or an old flag can never fire a false lead later.
+      if (lead && lead.form && (Date.now() - lead.t) < 120000) {
+        gtag('event', 'generate_lead', { form_name: lead.form });
+      }
+    }
+  } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F5F0E8;
+    --warm-white: #FAF8F4;
+    --slate: #1E2530;
+    --slate-mid: #3A4557;
+    --terracotta: #B5522A;
+    --terracotta-light: #C96B3F;
+    --border: rgba(30, 37, 48, 0.12);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    background: var(--warm-white);
+    color: var(--slate);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 6%;
+  }
+  .card {
+    max-width: 560px;
+    text-align: center;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 64px 48px;
+  }
+  .label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    display: block;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--slate-mid);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+  .btn {
+    background: var(--terracotta);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .btn:hover { background: var(--terracotta-light); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="label">Request received</span>
+    <h1>Thank you.</h1>
+    <p>We've received your message and will get back to you within 24 hours, usually the same day.</p>
+    <a class="btn" href="/">Back to Fihma Advisory</a>
+  </div>
+</body>
+</html>
