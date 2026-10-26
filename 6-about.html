@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1C558CYB9J');
+</script>
+
+<title>About — Fihma Advisory</title>
+<meta name="description" content="Meet the team behind Fihma Advisory. Financial and operational expertise, applied to AI consulting for small businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F5F0E8;
+    --warm-white: #FAF8F4;
+    --slate: #1E2530;
+    --slate-mid: #3A4557;
+    --slate-light: #6B7A91;
+    --terracotta: #B5522A;
+    --terracotta-light: #C96B3F;
+    --terracotta-pale: #F2E8E1;
+    --gold: #C49A3C;
+    --border: rgba(30, 37, 48, 0.12);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--warm-white);
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(250, 248, 244, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--slate);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--terracotta); }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+    color: var(--slate-mid);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover { color: var(--slate); }
+
+  .nav-cta {
+    background: var(--slate);
+    color: var(--warm-white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--slate-mid); }
+
+  section { padding: 100px 5%; }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+    color: var(--slate-mid);
+    max-width: 600px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  /* PAGE HERO */
+  #page-hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #page-hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(181,82,42,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* NAME STORY */
+  #name-story {
+    background: var(--slate);
+    color: var(--warm-white);
+  }
+
+  #name-story .section-label { color: var(--gold); opacity: 0.9; }
+  #name-story .section-title { color: var(--warm-white); }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 56px;
+    align-items: center;
+  }
+
+  .story-text p {
+    font-size: 1rem;
+    color: rgba(250, 248, 244, 0.7);
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .story-text p:last-child { margin-bottom: 0; }
+
+  .story-text strong {
+    color: var(--warm-white);
+    font-weight: 500;
+  }
+
+  .meaning-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    padding: 48px 40px;
+    border: 1px solid rgba(250, 248, 244, 0.1);
+    border-radius: 16px;
+  }
+
+  .meaning-pill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(250, 248, 244, 0.07);
+  }
+
+  .meaning-pill:last-child { border-bottom: none; }
+
+  .meaning-num {
+    font-family: var(--serif);
+    font-size: 0.8rem;
+    color: rgba(196, 154, 60, 0.5);
+    font-weight: 400;
+    min-width: 24px;
+  }
+
+  .meaning-word {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--warm-white);
+    flex: 1;
+  }
+
+  .meaning-def {
+    font-size: 0.825rem;
+    color: rgba(250, 248, 244, 0.4);
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* TEAM */
+  #team {
+    background: var(--warm-white);
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 64px;
+  }
+
+  .team-card {
+    background: var(--slate);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s;
+  }
+
+  .team-card:hover { transform: translateY(-4px); }
+
+  .team-photo-area {
+    background: var(--slate-mid);
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .team-avatar-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: var(--slate);
+    border: 3px solid rgba(250, 248, 244, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    color: rgba(250, 248, 244, 0.6);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .team-photo-area .photo-note {
+    position: absolute;
+    bottom: 14px;
+    font-size: 0.72rem;
+    color: rgba(250, 248, 244, 0.25);
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+
+  .team-info {
+    padding: 36px 36px 40px;
+  }
+
+  .team-name {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--warm-white);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .team-role {
+    font-size: 0.875rem;
+    color: var(--gold);
+    font-weight: 400;
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .team-bio {
+    font-size: 0.925rem;
+    color: rgba(250, 248, 244, 0.65);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+
+  .team-bio strong {
+    color: rgba(250, 248, 244, 0.9);
+    font-weight: 500;
+  }
+
+  .team-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(250, 248, 244, 0.08);
+    padding-top: 24px;
+  }
+
+  .credential {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .credential-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+
+  .credential-text {
+    font-size: 0.85rem;
+    color: rgba(250, 248, 244, 0.5);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /* VALUES */
+  #values {
+    background: var(--cream);
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .value-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 36px 32px;
+  }
+
+  .value-icon {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .value-card h3 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--slate);
+  }
+
+  .value-card p {
+    font-size: 0.9rem;
+    color: var(--slate-light);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* CTA */
+  #cta {
+    background: var(--terracotta);
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  #cta .section-label { color: rgba(255,255,255,0.6); }
+
+  #cta h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  #cta p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    font-weight: 300;
+    margin-bottom: 40px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .btn-white {
+    background: #fff;
+    color: var(--terracotta);
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+
+  .btn-white:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+
+  footer {
+    background: #161C27;
+    color: rgba(250, 248, 244, 0.4);
+    text-align: center;
+    padding: 32px 5%;
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+
+  footer a {
+    color: rgba(250, 248, 244, 0.55);
+    text-decoration: none;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  .fade-in-delay-1 { transition-delay: 0.15s; }
+
+  /* ASK AI */
+  #ask-ai {
+    background: var(--warm-white);
+    padding: 72px 5%;
+    border-top: 1px solid var(--border);
+  }
+
+  .ask-ai-inner {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .ask-ai-sub {
+    font-size: 0.9rem;
+    color: var(--slate-light);
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 36px;
+  }
+
+  .ask-ai-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .ai-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    background: var(--warm-white);
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--slate);
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.18s, border-color 0.2s;
+  }
+
+  .ai-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(30, 37, 48, 0.1);
+  }
+
+  .ai-btn--chatgpt:hover    { border-color: #10A37F; }
+  .ai-btn--claude:hover     { border-color: #D97757; }
+  .ai-btn--perplexity:hover { border-color: #20808D; }
+  .ai-btn--gemini:hover     { border-color: #4285F4; }
+
+  @media (max-width: 768px) {
+    section { padding: 72px 6%; }
+    #page-hero { padding-top: 110px; padding-bottom: 64px; }
+
+    .story-grid { grid-template-columns: 1fr; gap: 48px; }
+    .team-grid { grid-template-columns: 1fr; }
+    .arabic-word { font-size: 3.2rem; }
+
+    .nav-links .nav-link { display: none; }
+  }
+</style>
+<link rel="canonical" href="https://fihmaadvisory.com/about">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fihma Advisory">
+<meta property="og:url" content="https://fihmaadvisory.com/about">
+<meta property="og:title" content="About — Fihma Advisory">
+<meta property="og:description" content="Meet the team behind Fihma Advisory. Financial and operational expertise, applied to AI consulting for small businesses.">
+<meta property="og:image" content="https://fihmaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — Fihma Advisory">
+<meta name="twitter:description" content="Meet the team behind Fihma Advisory. Financial and operational expertise, applied to AI consulting for small businesses.">
+<meta name="twitter:image" content="https://fihmaadvisory.com/og-image.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Fihma <span>Advisory</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link" style="color: var(--slate); font-weight: 500;">About</a>
+    <a href="classes.html" class="nav-link">Classes</a>
+    <a href="index.html#contact" class="nav-cta">Book an Audit</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section id="page-hero">
+  <div class="container">
+    <span class="section-label">About Us</span>
+    <h1 class="section-title" style="max-width: 680px;">Financial discipline meets small business reality.</h1>
+    <p class="section-intro">We started Fihma Advisory because we've been on both sides — managing capital at scale and running a business day to day. We know what it costs to do things manually, and we know how to fix it.</p>
+  </div>
+</section>
+
+<!-- NAME STORY -->
+<section id="name-story">
+  <div class="container">
+    <span class="section-label">The Name</span>
+    <h2 class="section-title">A name with meaning.</h2>
+    <div class="story-grid">
+      <div class="story-text">
+        <p>Fihma comes from <strong>fahima</strong> — a word meaning to understand, to comprehend, to grasp something deeply. It carries a sense of wisdom that goes beyond book knowledge. The kind of understanding that comes from listening carefully before acting.</p>
+        <p>That's the model we bring to every engagement. We don't walk in with a pre-packaged solution. We spend time learning your business — your rhythm, your bottlenecks, the things that slow you down — before recommending anything.</p>
+        <p><strong>Understanding first. Then action.</strong> That's what the name means, and that's how we work.</p>
+      </div>
+      <div class="meaning-row">
+          <div class="meaning-pill">
+            <span class="meaning-num">01</span>
+            <span class="meaning-word">Intelligent</span>
+            <span class="meaning-def">Sharp, analytical thinking</span>
+          </div>
+          <div class="meaning-pill">
+            <span class="meaning-num">02</span>
+            <span class="meaning-word">Wise</span>
+            <span class="meaning-def">Judgment built from experience</span>
+          </div>
+          <div class="meaning-pill">
+            <span class="meaning-num">03</span>
+            <span class="meaning-word">Understanding</span>
+            <span class="meaning-def">Listen before you act</span>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="container">
+    <span class="section-label">The Team</span>
+    <h2 class="section-title">People who've done the work.</h2>
+    <p class="section-intro">Between us, we've managed institutional capital, structured complex financial transactions, and run a small business. We bring that range to every client.</p>
+
+    <div class="team-grid">
+
+      <!-- MAX -->
+      <div class="team-card fade-in">
+        <div class="team-photo-area">
+          <div class="team-avatar-circle">MF</div>
+        </div>
+        <div class="team-info">
+          <p class="team-name">Max Fihma</p>
+          <p class="team-role">President &amp; Co-Founder</p>
+          <p class="team-bio">Max spent his career in <strong>asset management</strong>, working in environments where analytical rigor and clear thinking weren't optional — they were the job. He developed a sharp eye for inefficiency and an instinct for finding where time and money were quietly leaking out of a system.</p>
+          <p class="team-bio">He founded Fihma Advisory to bring that same discipline to small business owners — people who are exceptional at what they do but often buried in operational friction that AI can solve. Max leads every client relationship personally.</p>
+        </div>
+      </div>
+
+      <!-- SAM -->
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-photo-area">
+          <div class="team-avatar-circle">SF</div>
+        </div>
+        <div class="team-info">
+          <p class="team-name">Sam Fihma</p>
+          <p class="team-role">Co-Founder</p>
+          <p class="team-bio">Sam brings a rare combination: <strong>investment banking and private equity experience</strong> alongside the lived reality of running a small business. He is the owner and operator of <strong>Pez Logistics</strong>, a logistics company he actively runs — which means he knows exactly what it feels like to be the client.</p>
+          <p class="team-bio">That dual perspective shapes how Fihma Advisory thinks about every engagement. Sam understands both the financial logic of a business decision and the operational reality of making it work on the ground.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section id="values">
+  <div class="container">
+    <span class="section-label">How We Work</span>
+    <h2 class="section-title">A few things we believe in.</h2>
+    <div class="values-grid">
+      <div class="value-card fade-in">
+        <span class="value-icon">🎯</span>
+        <h3>Understand before you recommend</h3>
+        <p>We don't have a favorite tool we're trying to sell you on. We start by learning your business and let the problem tell us what the solution should be.</p>
+      </div>
+      <div class="value-card fade-in fade-in-delay-1">
+        <span class="value-icon">🤝</span>
+        <h3>Direct relationships only</h3>
+        <p>No account managers, no handoffs. You deal with us directly from the first conversation through ongoing support. That's not a feature — it's the model.</p>
+      </div>
+      <div class="value-card fade-in fade-in-delay-1">
+        <span class="value-icon">📐</span>
+        <h3>Built to last, not to impress</h3>
+        <p>We build things that work quietly and reliably. If it's not solving a real problem in a way you'll actually use, we won't build it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <span class="section-label">Get Started</span>
+    <h2>Ready to find what AI can do for your business?</h2>
+    <p>The audit is where it starts. One conversation, no pressure, honest assessment.</p>
+    <a href="index.html#contact" class="btn-white">Book an Audit →</a>
+  </div>
+</section>
+
+<!-- ASK AI -->
+<section id="ask-ai">
+  <div class="container">
+    <div class="ask-ai-inner">
+      <span class="section-label">Ask AI</span>
+      <h2 class="section-title">Curious? Ask an AI about us.</h2>
+      <p class="ask-ai-sub">Click any AI below — it opens with a ready-made prompt asking for a summary of who we are, what we do, and how to get in touch.</p>
+      <div class="ask-ai-grid">
+        <button class="ai-btn ai-btn--chatgpt" onclick="askAI('chatgpt')">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect width="20" height="20" rx="5" fill="#10A37F"/><path d="M5 7.5h10M5 10h10M5 12.5h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+          ChatGPT
+        </button>
+        <button class="ai-btn ai-btn--claude" onclick="askAI('claude')">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect width="20" height="20" rx="5" fill="#D97757"/><path d="M13.5 6A5 5 0 1 0 13.5 14" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Claude
+        </button>
+        <button class="ai-btn ai-btn--perplexity" onclick="askAI('perplexity')">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect width="20" height="20" rx="5" fill="#1C1C1C"/><path d="M10 4v12M4 10h12M6.3 6.3l7.4 7.4M13.7 6.3l-7.4 7.4" stroke="white" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Perplexity
+        </button>
+        <button class="ai-btn ai-btn--gemini" onclick="askAI('gemini')">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect width="20" height="20" rx="5" fill="#4285F4"/><path d="M10 3C10 7 13 10 17 10C13 10 10 13 10 17C10 13 7 10 3 10C7 10 10 7 10 3Z" fill="white"/></svg>
+          Gemini
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  function askAI(provider) {
+    var prompt = "Search up Fihma Advisory at fihmaadvisory.com and tell me who they are, what they do, and how to get in touch with them.";
+    var encoded = encodeURIComponent(prompt);
+    var urls = {
+      chatgpt:    "https://chatgpt.com/?q=" + encoded,
+      claude:     "https://claude.ai/new?q=" + encoded,
+      perplexity: "https://www.perplexity.ai/search?q=" + encoded,
+      gemini:     "https://gemini.google.com/app?q=" + encoded
+    };
+    window.open(urls[provider], '_blank', 'noopener,noreferrer');
+  }
+</script>
+
+</body>
+</html>
+
