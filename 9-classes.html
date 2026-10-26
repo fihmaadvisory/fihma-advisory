@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1C558CYB9J');
+</script>
+
+<title>AI Classes — Fihma Advisory</title>
+<meta name="description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F5F0E8;
+    --warm-white: #FAF8F4;
+    --slate: #1E2530;
+    --slate-mid: #3A4557;
+    --slate-light: #6B7A91;
+    --terracotta: #B5522A;
+    --terracotta-light: #C96B3F;
+    --terracotta-pale: #F2E8E1;
+    --gold: #C49A3C;
+    --border: rgba(30, 37, 48, 0.12);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--warm-white);
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(250, 248, 244, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 5%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--slate);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--terracotta); }
+
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+
+  .nav-link {
+    font-size: 0.875rem;
+    color: var(--slate-mid);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover { color: var(--slate); }
+
+  .nav-cta {
+    background: var(--slate);
+    color: var(--warm-white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .nav-cta:hover { background: var(--slate-mid); }
+
+  section { padding: 100px 5%; }
+
+  .container { max-width: 1040px; margin: 0 auto; }
+
+  .section-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .section-title em { font-style: italic; color: var(--terracotta); }
+
+  .section-intro {
+    font-size: 1rem;
+    color: var(--slate-mid);
+    max-width: 600px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  .btn-primary {
+    background: var(--terracotta);
+    color: #fff;
+    padding: 16px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--terracotta-light); transform: translateY(-1px); }
+
+  /* PAGE HERO */
+  #page-hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #page-hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 480px; height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(181,82,42,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 40px; }
+
+  .hero-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .tag {
+    font-size: 0.8rem;
+    color: var(--slate-mid);
+    background: var(--warm-white);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  /* WHO IT'S FOR */
+  #audience { background: var(--slate); color: var(--warm-white); }
+  #audience .section-label { color: var(--gold); opacity: 0.9; }
+  #audience .section-title { color: var(--warm-white); }
+  #audience .section-intro { color: rgba(250, 248, 244, 0.7); }
+
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 56px;
+  }
+
+  .audience-card {
+    border: 1px solid rgba(250, 248, 244, 0.12);
+    border-radius: 12px;
+    padding: 36px 32px;
+  }
+
+  .audience-num {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(250, 248, 244, 0.25);
+    display: block;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .audience-card h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--warm-white);
+  }
+
+  .audience-card p {
+    font-size: 0.925rem;
+    color: rgba(250, 248, 244, 0.65);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* CURRICULUM */
+  #curriculum { background: var(--warm-white); }
+
+  .modules {
+    margin-top: 56px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .module {
+    display: grid;
+    grid-template-columns: 120px 1fr 1.3fr;
+    gap: 32px;
+    padding: 32px 36px;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+
+  .module:last-child { border-bottom: none; }
+
+  .module-num {
+    font-family: var(--serif);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: 0.05em;
+  }
+
+  .module h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--slate);
+    line-height: 1.3;
+  }
+
+  .module p {
+    font-size: 0.925rem;
+    color: var(--slate-light);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .curriculum-note {
+    margin-top: 24px;
+    font-size: 0.875rem;
+    color: var(--slate-light);
+    font-weight: 300;
+  }
+
+  /* FORMAT */
+  #format { background: var(--cream); }
+
+  .format-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .format-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 40px 36px;
+  }
+
+  .format-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--terracotta-pale);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+  }
+
+  .format-card h3 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .format-card p {
+    font-size: 0.925rem;
+    color: var(--slate-light);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .promise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .promise {
+    border-left: 3px solid var(--terracotta);
+    background: var(--warm-white);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 24px;
+  }
+
+  .promise h4 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .promise p {
+    font-size: 0.875rem;
+    color: var(--slate-light);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* SIGN UP */
+  #contact { background: var(--slate); color: var(--warm-white); }
+  #contact .section-label { color: var(--gold); }
+  #contact .section-title { color: var(--warm-white); }
+  #contact .section-intro { color: rgba(250, 248, 244, 0.65); }
+
+  .signup-grid {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 80px;
+    margin-top: 56px;
+    align-items: start;
+  }
+
+  .signup-form { display: flex; flex-direction: column; gap: 18px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+  .field { display: flex; flex-direction: column; gap: 8px; }
+
+  .field label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(250, 248, 244, 0.6);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    background: rgba(250, 248, 244, 0.06);
+    border: 1px solid rgba(250, 248, 244, 0.15);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: var(--warm-white);
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    transition: border-color 0.2s, background 0.2s;
+    width: 100%;
+    appearance: none;
+  }
+
+  .field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(250,248,244,0.4)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+  .field select option { background: var(--slate); color: var(--warm-white); }
+
+  .field input::placeholder,
+  .field textarea::placeholder { color: rgba(250, 248, 244, 0.3); }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: rgba(181, 82, 42, 0.6);
+    background: rgba(250, 248, 244, 0.09);
+  }
+
+  .field textarea { resize: vertical; min-height: 110px; }
+
+  .btn-submit {
+    background: var(--terracotta);
+    color: #fff;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .btn-submit:hover { background: var(--terracotta-light); }
+
+  .signup-info { display: flex; flex-direction: column; gap: 32px; }
+
+  .info-box {
+    background: rgba(250, 248, 244, 0.05);
+    border: 1px solid rgba(250, 248, 244, 0.1);
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .info-box h4 {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--warm-white);
+  }
+
+  .info-box p {
+    font-size: 0.875rem;
+    color: rgba(250, 248, 244, 0.55);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .info-box p strong { color: var(--gold); font-weight: 500; }
+
+  .info-detail-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(250, 248, 244, 0.45);
+    margin-bottom: 8px;
+  }
+
+  .info-detail-value { font-size: 1rem; color: var(--warm-white); }
+  .info-detail-value a { color: var(--warm-white); text-decoration: none; }
+
+  footer {
+    background: #161C27;
+    color: rgba(250, 248, 244, 0.4);
+    text-align: center;
+    padding: 32px 5%;
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+
+  footer a { color: rgba(250, 248, 244, 0.55); text-decoration: none; }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  .fade-in-delay-1 { transition-delay: 0.1s; }
+  .fade-in-delay-2 { transition-delay: 0.2s; }
+
+  @media (max-width: 768px) {
+    section { padding: 72px 6%; }
+    #page-hero { padding-top: 110px; padding-bottom: 64px; }
+    .module { grid-template-columns: 1fr; gap: 10px; padding: 28px 24px; }
+    .format-grid { grid-template-columns: 1fr; }
+    .signup-grid { grid-template-columns: 1fr; gap: 48px; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .btn-primary { width: 100%; text-align: center; }
+    .nav-links .nav-link { display: none; }
+  }
+</style>
+<link rel="canonical" href="https://fihmaadvisory.com/classes">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fihma Advisory">
+<meta property="og:url" content="https://fihmaadvisory.com/classes">
+<meta property="og:title" content="AI Classes — Fihma Advisory">
+<meta property="og:description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<meta property="og:image" content="https://fihmaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Classes — Fihma Advisory">
+<meta name="twitter:description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<meta name="twitter:image" content="https://fihmaadvisory.com/og-image.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Fihma <span>Advisory</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="classes.html" class="nav-link" style="color: var(--slate); font-weight: 500;">Classes</a>
+    <a href="index.html#contact" class="nav-cta">Book an Audit</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section id="page-hero">
+  <div class="container">
+    <span class="section-label">AI Classes</span>
+    <h1 class="section-title" style="max-width: 720px;">AI isn't just for tech people. <em>We'll show you how.</em></h1>
+    <p class="section-intro">Beginner-friendly classes for people who've heard all the noise about AI but never had someone sit down and walk them through it. Small groups, plain English, hands-on from the first minute.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Class →</a>
+      <div class="hero-facts">
+        <span class="tag">Small groups</span>
+        <span class="tag">In person in NYC</span>
+        <span class="tag">Or virtual</span>
+        <span class="tag">No experience needed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section id="audience">
+  <div class="container">
+    <span class="section-label">Who It's For</span>
+    <h2 class="section-title">If you've ever felt left behind by technology, this is for you.</h2>
+    <p class="section-intro">You don't need to know what a "prompt" is or own the latest laptop. If you can send an email, you can learn this.</p>
+    <div class="audience-grid">
+      <div class="audience-card fade-in">
+        <span class="audience-num">01</span>
+        <h3>Small business owners</h3>
+        <p>You keep hearing that AI could save you hours, but nobody has shown you what that actually looks like for a business like yours.</p>
+      </div>
+      <div class="audience-card fade-in fade-in-delay-1">
+        <span class="audience-num">02</span>
+        <h3>Teams and employees</h3>
+        <p>Your workplace is starting to use AI tools and you want to get comfortable with them before you're expected to know them.</p>
+      </div>
+      <div class="audience-card fade-in fade-in-delay-2">
+        <span class="audience-num">03</span>
+        <h3>Anyone starting from zero</h3>
+        <p>Retirees, career changers, parents, the curious. If AI feels confusing or intimidating, we start exactly where you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT -->
+<section id="format">
+  <div class="container">
+    <span class="section-label">How It Works</span>
+    <h2 class="section-title">Learn in person or from home.</h2>
+    <p class="section-intro">Groups are kept small on purpose, so everyone gets hands-on help and nobody gets left behind.</p>
+    <div class="format-grid">
+      <div class="format-card fade-in">
+        <div class="format-icon">🏙️</div>
+        <h3>In person</h3>
+        <p>Small-group sessions in New York City. Bring your laptop, tablet or phone and work through everything with an instructor in the room.</p>
+      </div>
+      <div class="format-card fade-in fade-in-delay-1">
+        <div class="format-icon">💻</div>
+        <h3>Virtual</h3>
+        <p>Live, small-group sessions over video call from wherever you are. Same hands-on format, with screen sharing so we can help you step by step.</p>
+      </div>
+    </div>
+    <div class="promise-grid">
+      <div class="promise fade-in">
+        <h4>No question is too basic</h4>
+        <p>We go at the pace of the room. Asking "what does that button do?" is exactly the point.</p>
+      </div>
+      <div class="promise fade-in fade-in-delay-1">
+        <h4>Free tools only</h4>
+        <p>Everything we teach works on the free versions. You won't need to buy anything to follow along.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <span class="section-label">Book a Class</span>
+    <h2 class="section-title">Contact us to book a class.</h2>
+    <p class="section-intro">Interested for yourself, your business or your team? Send us a note and we'll get back to you with details.</p>
+    <div class="signup-grid">
+      <form class="signup-form" name="class-inquiry" method="POST" netlify action="/thank-you">
+        <div class="form-row">
+          <div class="field">
+            <label for="c-name">Your Name</label>
+            <input type="text" id="c-name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone Number</label>
+            <input type="tel" id="c-phone" name="phone" placeholder="(212) 555-0100">
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-email">Email Address</label>
+          <input type="email" id="c-email" name="email" placeholder="jane@email.com" required>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" placeholder="Tell us a bit about who the class is for and whether you'd prefer in person or virtual."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message →</button>
+      </form>
+      <div class="signup-info">
+        <div>
+          <p class="info-detail-label">Email</p>
+          <p class="info-detail-value"><a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+        </div>
+        <div>
+          <p class="info-detail-label">Response time</p>
+          <p class="info-detail-value">Within 24 hours, usually same day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  // Mark a real form submission so the thank-you page can count it as a lead exactly once.
+  document.querySelectorAll('form[netlify]').forEach(function(f) {
+    f.addEventListener('submit', function() {
+      try { sessionStorage.setItem('fa_lead_form', JSON.stringify({ form: f.getAttribute('name'), t: Date.now() })); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>
+
