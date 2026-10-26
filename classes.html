@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1C558CYB9J');
+</script>
+
 <title>AI Classes — Fihma Advisory</title>
 <meta name="description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -488,6 +498,17 @@
     .nav-links .nav-link { display: none; }
   }
 </style>
+<link rel="canonical" href="https://fihmaadvisory.com/classes">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fihma Advisory">
+<meta property="og:url" content="https://fihmaadvisory.com/classes">
+<meta property="og:title" content="AI Classes — Fihma Advisory">
+<meta property="og:description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<meta property="og:image" content="https://fihmaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Classes — Fihma Advisory">
+<meta name="twitter:description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<meta name="twitter:image" content="https://fihmaadvisory.com/og-image.png">
 </head>
 <body>
 
@@ -584,7 +605,7 @@
     <h2 class="section-title">Contact us to book a class.</h2>
     <p class="section-intro">Interested for yourself, your business or your team? Send us a note and we'll get back to you with details.</p>
     <div class="signup-grid">
-      <form class="signup-form" name="class-inquiry" method="POST" netlify>
+      <form class="signup-form" name="class-inquiry" method="POST" netlify action="/thank-you">
         <div class="form-row">
           <div class="field">
             <label for="c-name">Your Name</label>
@@ -630,5 +651,13 @@
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
+<script>
+  // Mark a real form submission so the thank-you page can count it as a lead exactly once.
+  document.querySelectorAll('form[netlify]').forEach(function(f) {
+    f.addEventListener('submit', function() {
+      try { sessionStorage.setItem('fa_lead_form', JSON.stringify({ form: f.getAttribute('name'), t: Date.now() })); } catch (e) {}
+    });
+  });
+</script>
 </body>
 </html>
