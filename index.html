@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1C558CYB9J');
+</script>
+
 <title>Fihma Advisory — AI Consulting for Small Business</title>
 <meta name="description" content="Fihma Advisory helps small businesses save time and money with practical AI solutions. Book an audit today.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -874,6 +884,31 @@
   .ai-btn--perplexity:hover { border-color: #20808D; }
   .ai-btn--gemini:hover  { border-color: #4285F4; }
 </style>
+<link rel="canonical" href="https://fihmaadvisory.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fihma Advisory">
+<meta property="og:url" content="https://fihmaadvisory.com/">
+<meta property="og:title" content="Fihma Advisory — AI Consulting for Small Business">
+<meta property="og:description" content="Practical AI solutions for small businesses. No tech background needed. We handle everything.">
+<meta property="og:image" content="https://fihmaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fihma Advisory — AI Consulting for Small Business">
+<meta name="twitter:description" content="Practical AI solutions for small businesses. No tech background needed. We handle everything.">
+<meta name="twitter:image" content="https://fihmaadvisory.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fihma Advisory",
+  "url": "https://fihmaadvisory.com/",
+  "description": "Fihma Advisory helps small businesses save time and money with practical AI solutions. No tech background needed.",
+  "email": "max@fihmaadvisory.com",
+  "founders": [
+    { "@type": "Person", "name": "Max Fihma", "jobTitle": "President & Co-Founder" },
+    { "@type": "Person", "name": "Sam Fihma", "jobTitle": "Co-Founder" }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1048,7 +1083,7 @@
     <h2 class="section-title">Book an audit.</h2>
     <p class="section-intro">Tell us a little about your business and we'll reach out to schedule a 30-minute call.</p>
     <div class="contact-grid">
-      <form class="contact-form" name="audit-request" netlify>
+      <form class="contact-form" name="audit-request" netlify action="/thank-you">
         <div class="form-row">
           <div class="field">
             <label for="name">Your Name</label>
@@ -1158,5 +1193,13 @@
   }
 </script>
 
+<script>
+  // Mark a real form submission so the thank-you page can count it as a lead exactly once.
+  document.querySelectorAll('form[netlify]').forEach(function(f) {
+    f.addEventListener('submit', function() {
+      try { sessionStorage.setItem('fa_lead_form', JSON.stringify({ form: f.getAttribute('name'), t: Date.now() })); } catch (e) {}
+    });
+  });
+</script>
 </body>
 </html>
