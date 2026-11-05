@@ -523,6 +523,11 @@
 
     .nav-links .nav-link { display: none; }
   }
+  @media (max-width: 640px) {
+    nav a[href="index.html"]:not(.nav-logo), nav a[href="about.html"], nav a[href="classes.html"] { display: none; }
+    nav > div { gap: 16px !important; }
+    nav a { white-space: nowrap; }
+  }
 </style>
 <link rel="canonical" href="https://fihmaadvisory.com/about">
 <meta property="og:type" content="website">
@@ -545,6 +550,7 @@
     <a href="index.html" class="nav-link">Home</a>
     <a href="about.html" class="nav-link" style="color: var(--slate); font-weight: 500;">About</a>
     <a href="classes.html" class="nav-link">Classes</a>
+    <a href="scorecard.html" style="font-size: 0.875rem; color: var(--slate-mid); font-weight: 400; text-decoration: none; transition: color 0.2s;">Free Scorecard</a>
     <a href="index.html#contact" class="nav-cta">Book an Audit</a>
   </div>
 </nav>
