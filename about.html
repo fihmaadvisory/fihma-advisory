@@ -15,6 +15,9 @@
 
 <title>About Fihma Advisory | AI Consulting in NYC</title>
 <meta name="description" content="Meet Fihma Advisory: NYC AI consultants with real finance and operations backgrounds. Practical AI help for small businesses. Book an audit today.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -545,6 +548,7 @@
     <a href="index.html" class="nav-link">Home</a>
     <a href="about.html" class="nav-link" style="color: var(--slate); font-weight: 500;">About</a>
     <a href="classes.html" class="nav-link">Classes</a>
+    <a href="/blog/" class="nav-link">Blog</a>
     <a href="index.html#contact" class="nav-cta">Book an Audit</a>
   </div>
 </nav>
@@ -621,8 +625,8 @@
         <div class="team-info">
           <p class="team-name">Sam Fihma</p>
           <p class="team-role">Co-Founder</p>
-          <p class="team-bio">Sam brings a rare combination: <strong>investment banking and private equity experience</strong> alongside the lived reality of running a small business. He is the owner and operator of <strong>Pez Logistics</strong>, a logistics company he actively runs — which means he knows exactly what it feels like to be the client.</p>
-          <p class="team-bio">That dual perspective shapes how Fihma Advisory thinks about every engagement. Sam understands both the financial logic of a business decision and the operational reality of making it work on the ground.</p>
+          <p class="team-bio">Sam brings a rare combination: <strong>investment banking at Duff &amp; Phelps and private equity at LongueVue Capital</strong>, alongside the lived reality of running a small business. He founded and runs <strong>Pez Logistics</strong>, a New Jersey 3PL, which means he knows exactly what it feels like to be the client.</p>
+          <p class="team-bio">He also builds these systems himself. In 2026 he rebuilt Pez around AI, from a custom warehouse management system to a hub connecting email, QuickBooks and freight software, and got back more than 40 hours a week. <a href="/blog/pez-logistics-ai-case-study.html" style="color: var(--terracotta);">Read how he did it.</a></p>
         </div>
       </div>
 
@@ -695,8 +699,9 @@
 </section>
 
 <footer>
-  <p>© 2025 Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+  <p>© <span class="js-year">2026</span> Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a> · <a href="tel:+12012890474">(201) 289-0474</a></p>
 </footer>
+<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 
 <script>
   const observer = new IntersectionObserver((entries) => {

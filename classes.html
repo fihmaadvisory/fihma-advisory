@@ -15,6 +15,9 @@
 
 <title>AI Classes in NYC for Beginners | Fihma Advisory</title>
 <meta name="description" content="Beginner-friendly AI classes in small groups, in person in NYC or virtual. No tech background needed. Learn to use AI in your work and everyday life.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -520,6 +523,7 @@
     <a href="index.html" class="nav-link">Home</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="classes.html" class="nav-link" style="color: var(--slate); font-weight: 500;">Classes</a>
+    <a href="/blog/" class="nav-link">Blog</a>
     <a href="index.html#contact" class="nav-cta">Book an Audit</a>
   </div>
 </nav>
@@ -643,8 +647,9 @@
 </section>
 
 <footer>
-  <p>© 2025 Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+  <p>© <span class="js-year">2026</span> Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a> · <a href="tel:+12012890474">(201) 289-0474</a></p>
 </footer>
+<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 
 <script>
   const observer = new IntersectionObserver((entries) => {

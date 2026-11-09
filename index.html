@@ -14,7 +14,10 @@
 </script>
 
 <title>AI Consulting for NYC Small Businesses | Fihma Advisory</title>
-<meta name="description" content="Fihma Advisory helps NYC small businesses save time with practical AI consulting and automation. No tech background needed. Book your audit today.">
+<meta name="description" content="Fihma Advisory helps NYC small businesses save time with practical AI, from customer follow-up to connecting your email, accounting and operations software. Book your audit today.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -88,6 +91,18 @@
   }
 
   .nav-cta:hover { background: var(--slate-mid); }
+
+  .nav-links { display: flex; align-items: center; gap: 32px; }
+
+  .nav-link {
+    font-size: 0.875rem;
+    color: var(--slate-mid);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover { color: var(--slate); }
 
   /* SECTIONS */
   section { padding: 100px 5%; }
@@ -186,6 +201,101 @@
   .hero-note strong {
     color: var(--slate-mid);
   }
+
+  .hero-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181,82,42,0.3);
+    padding-bottom: 2px;
+  }
+
+  .hero-link:hover { border-color: var(--terracotta); }
+
+  /* PROOF */
+  #proof {
+    background: var(--warm-white);
+    padding: 72px 5%;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .proof-inner {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .proof-title {
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+
+  .proof-copy p {
+    font-size: 0.95rem;
+    color: var(--slate-mid);
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+
+  .proof-link {
+    font-size: 0.925rem;
+    font-weight: 500;
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181,82,42,0.3);
+    padding-bottom: 2px;
+  }
+
+  .proof-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .proof-stat {
+    padding: 32px 22px;
+    border-right: 1px solid var(--border);
+    background: var(--cream);
+  }
+
+  .proof-stat:last-child { border-right: none; }
+
+  .proof-num {
+    display: block;
+    font-family: var(--serif);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--terracotta);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .proof-desc {
+    font-size: 0.85rem;
+    color: var(--slate-mid);
+    line-height: 1.5;
+  }
+
+  .service-group {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    padding-top: 28px;
+    padding-bottom: 4px;
+  }
+
+  .service-group:first-child { padding-top: 0; }
 
   /* PROBLEM */
   #problem {
@@ -772,6 +882,8 @@
   @media (max-width: 768px) {
     section { padding: 72px 6%; }
 
+    .nav-links .nav-link { display: none; }
+
     #hero { padding-top: 120px; padding-bottom: 72px; }
 
     .steps {
@@ -803,6 +915,15 @@
     .form-row {
       grid-template-columns: 1fr;
     }
+
+    .proof-inner {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .proof-stat { padding: 24px 14px; }
+
+    .proof-num { font-size: 1.9rem; }
 
     .hero-actions {
       flex-direction: column;
@@ -904,6 +1025,7 @@
   "url": "https://fihmaadvisory.com/",
   "description": "Fihma Advisory helps small businesses save time and money with practical AI solutions. No tech background needed.",
   "email": "max@fihmaadvisory.com",
+  "telephone": "+1-201-289-0474",
   "founders": [
     { "@type": "Person", "name": "Max Fihma", "jobTitle": "President & Co-Founder" },
     { "@type": "Person", "name": "Sam Fihma", "jobTitle": "Co-Founder" }
@@ -916,10 +1038,11 @@
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-logo">Fihma <span>Advisory</span></a>
-  <div style="display: flex; align-items: center; gap: 32px;">
-    <a href="index.html" style="font-size: 0.875rem; color: var(--slate); font-weight: 500; text-decoration: none;">Home</a>
-    <a href="about.html" style="font-size: 0.875rem; color: var(--slate-mid); font-weight: 400; text-decoration: none; transition: color 0.2s;">About</a>
-    <a href="classes.html" style="font-size: 0.875rem; color: var(--slate-mid); font-weight: 400; text-decoration: none; transition: color 0.2s;">Classes</a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" style="color: var(--slate); font-weight: 500;">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="classes.html" class="nav-link">Classes</a>
+    <a href="/blog/" class="nav-link">Blog</a>
     <a href="#contact" class="nav-cta">Book an Audit</a>
   </div>
 </nav>
@@ -929,9 +1052,29 @@
   <div class="container">
     <span class="hero-eyebrow">AI Consulting for Small Business</span>
     <h1 class="hero-headline">You built this business from nothing. Let's make sure <em>nothing holds it back.</em></h1>
-    <p class="hero-sub">Practical AI consulting for small businesses across New York City. No tech background needed. We handle everything.</p>
+    <p class="hero-sub">Practical AI consulting for small businesses across New York City. We did it for our own company first. Now we do it for yours. No tech background needed.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Book an Audit →</a>
+      <a href="/blog/pez-logistics-ai-case-study.html" class="hero-link">See how we did it →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="container">
+    <div class="proof-inner">
+      <div class="proof-copy">
+        <span class="section-label">Proven on Our Own Business</span>
+        <h2 class="proof-title">We rebuilt Pez Logistics, a New Jersey 3PL, around AI.</h2>
+        <p>Before helping anyone else, we connected its email, accounting, warehouse and freight systems, replaced software that didn't fit, and automated sales and finance.</p>
+        <a href="/blog/pez-logistics-ai-case-study.html" class="proof-link">Read the full story →</a>
+      </div>
+      <div class="proof-stats">
+        <div class="proof-stat"><span class="proof-num">40+</span><span class="proof-desc">hours saved every week</span></div>
+        <div class="proof-stat"><span class="proof-num">$15K</span><span class="proof-desc">a year cut from software costs</span></div>
+        <div class="proof-stat"><span class="proof-num">4</span><span class="proof-desc">systems connected into one</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -967,7 +1110,7 @@
   <div class="container">
     <span class="section-label">How It Works</span>
     <h2 class="section-title">Simple process. Real results.</h2>
-    <p class="section-intro">We don't sell software. We solve your specific problem, then make sure it keeps working.</p>
+    <p class="section-intro">We don't resell software or lock you into a vendor. We solve your specific problem, with the right existing tool or a system built around how you work, then make sure it keeps working.</p>
     <div class="steps">
       <div class="step fade-in">
         <span class="step-num">Step 01</span>
@@ -977,7 +1120,7 @@
       <div class="step fade-in fade-in-delay-1">
         <span class="step-num">Step 02</span>
         <h3>We Build It</h3>
-        <p>We implement the right AI tools for your specific situation. Set up, tested, and ready to use. You don't touch any technology.</p>
+        <p>We set up the right AI tools, or build custom ones when off-the-shelf software doesn't fit. Tested and ready to use. You don't touch any technology.</p>
       </div>
       <div class="step fade-in fade-in-delay-2">
         <span class="step-num">Step 03</span>
@@ -993,22 +1136,25 @@
   <div class="container">
     <span class="section-label">Who We Help</span>
     <h2 class="section-title">Built for owner-operated businesses.</h2>
-    <p class="section-intro">We work with small businesses where the owner is still in the day-to-day — and where saving time translates directly into real money.</p>
+    <p class="section-intro">We work with small businesses where the owner is still in the day-to-day, and where saving time translates directly into real money.</p>
     <div class="clients-grid">
       <div class="client-card fade-in">
-        <div class="client-icon">⏱️</div>
-        <h3>You're losing time to repetitive tasks</h3>
-        <p>Answering the same questions, chasing down follow-ups, drafting the same messages. We identify exactly where the hours are going and automate what shouldn't require you.</p>
+        <div class="client-icon">🚚</div>
+        <h3>Logistics &amp; distribution</h3>
+        <p>3PLs, warehouses, trucking and wholesale. Connect your WMS, TMS, accounting and inbox, automate quoting and billing, and stop retyping the same order three times.</p>
+        <div class="client-examples"><span class="tag">3PL &amp; warehousing</span><span class="tag">Trucking</span><span class="tag">Wholesale</span></div>
       </div>
       <div class="client-card fade-in fade-in-delay-1">
-        <div class="client-icon">📉</div>
-        <h3>Customers are slipping through</h3>
-        <p>Missed inquiries, no follow-up system, reviews going unanswered. We build the infrastructure that keeps customers engaged without you having to think about it.</p>
+        <div class="client-icon">🔧</div>
+        <h3>Trades &amp; field service</h3>
+        <p>HVAC, plumbing, electrical, construction and anyone running a dispatch board. Faster estimates, automatic follow-ups and reminders, and fewer missed calls.</p>
+        <div class="client-examples"><span class="tag">HVAC</span><span class="tag">Plumbing</span><span class="tag">Electrical</span><span class="tag">Construction</span></div>
       </div>
       <div class="client-card fade-in fade-in-delay-2">
-        <div class="client-icon">🔁</div>
-        <h3>You want systems, not more software</h3>
-        <p>We don't hand you a tool and walk away. We build something that works, show you how it fits into your day, and keep it running. You stay focused on your business.</p>
+        <div class="client-icon">🏪</div>
+        <h3>Local &amp; service businesses</h3>
+        <p>Restaurants, retail and professional services. Answer customers after hours, keep reviews coming in, and run marketing that doesn't depend on you finding the time.</p>
+        <div class="client-examples"><span class="tag">Restaurants</span><span class="tag">Retail</span><span class="tag">Professional services</span></div>
       </div>
     </div>
   </div>
@@ -1023,18 +1169,22 @@
     <div class="services-intro">
       <div>
         <div class="services-list">
+          <p class="service-group">Operations &amp; Back Office</p>
+          <div class="service-row"><span class="service-name">Connect your email, accounting and operations software into one AI hub</span></div>
+          <div class="service-row"><span class="service-name">Custom tools that replace expensive or clunky software</span></div>
+          <div class="service-row"><span class="service-name">AI email agents and inbox triage</span></div>
+          <div class="service-row"><span class="service-name">Quoting and estimate agents</span></div>
+          <div class="service-row"><span class="service-name">Daily cash flow reports and financial dashboards</span></div>
+          <p class="service-group">Sales &amp; Customers</p>
           <div class="service-row"><span class="service-name">Customer follow-up automation</span></div>
-          <div class="service-row"><span class="service-name">Review generation system</span></div>
-          <div class="service-row"><span class="service-name">Review response system</span></div>
-          <div class="service-row"><span class="service-name">Website / Facebook FAQ chatbot</span></div>
-          <div class="service-row"><span class="service-name">Maintenance reminder system</span></div>
-          <div class="service-row"><span class="service-name">Seasonal campaign system</span></div>
-          <div class="service-row"><span class="service-name">AI content &amp; social media system</span></div>
+          <div class="service-row"><span class="service-name">Outbound prospecting agent</span></div>
           <div class="service-row"><span class="service-name">After-hours auto-response</span></div>
-          <div class="service-row"><span class="service-name">Estimate drafting template</span></div>
-          <div class="service-row"><span class="service-name">Email campaign system</span></div>
-          <div class="service-row"><span class="service-name">Menu copywriting</span></div>
-          <div class="service-row"><span class="service-name">Catering inquiry template</span></div>
+          <div class="service-row"><span class="service-name">Review generation and response</span></div>
+          <div class="service-row"><span class="service-name">Website FAQ chatbot</span></div>
+          <p class="service-group">Marketing</p>
+          <div class="service-row"><span class="service-name">Email and seasonal campaigns</span></div>
+          <div class="service-row"><span class="service-name">AI content and social media</span></div>
+          <div class="service-row"><span class="service-name">Maintenance and service reminders</span></div>
         </div>
       </div>
       <div>
@@ -1103,13 +1253,16 @@
           <label for="type">Type of Business</label>
           <select id="type" name="business_type" required>
             <option value="" disabled selected>Select your industry...</option>
+            <option>Logistics / 3PL / Warehousing</option>
+            <option>Trucking / Transportation</option>
+            <option>Wholesale / Distribution</option>
+            <option>Construction / Contracting</option>
+            <option>HVAC / Plumbing / Electrical</option>
+            <option>Other Home Services</option>
             <option>Restaurant / Food &amp; Beverage</option>
-            <option>Plumbing</option>
-            <option>HVAC</option>
-            <option>Electrical</option>
-            <option>Septic / Home Services</option>
             <option>Retail</option>
-            <option>Other Local Business</option>
+            <option>Professional Services</option>
+            <option>Other</option>
           </select>
         </div>
         <div class="field">
@@ -1122,6 +1275,10 @@
         <div class="contact-detail">
           <p class="contact-detail-label">Email</p>
           <p class="contact-detail-value"><a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Phone</p>
+          <p class="contact-detail-value"><a href="tel:+12012890474">(201) 289-0474</a></p>
         </div>
         <div class="contact-detail">
           <p class="contact-detail-label">Response time</p>
@@ -1163,8 +1320,9 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></p>
+  <p>© <span class="js-year">2026</span> Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a> · <a href="tel:+12012890474">(201) 289-0474</a></p>
 </footer>
+<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 
 <script>
   const observer = new IntersectionObserver((entries) => {
