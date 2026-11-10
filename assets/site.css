@@ -1,19 +1,21 @@
 /* Fihma Advisory design system
-   Ink green on white, with a highlighter yellow that only ever marks
-   work that has been taken off someone's plate. One family (Archivo),
+   Pez Logistics colors: navy ink, violet for actions, and a periwinkle
+   highlighter that only ever marks work taken off someone's plate. One family (Archivo),
    with its width axis doing the work display faces usually do. */
 
 :root {
   --paper: #FFFFFF;
-  --mist: #EEF2EF;
-  --ink: #13261F;
-  --ledger: #1D4A38;
-  --ledger-deep: #163A2C;
-  --stone: #56655E;
-  --rule: #D3DCD7;
-  --highlight: #F3DD3F;
-  --highlight-soft: #FAF0A6;
-  --focus: #2B6CB0;
+  --mist: #FBF8F2;
+  --ink: #16142B;
+  --ledger: #4B3FD1;
+  --ledger-deep: #3A30A8;
+  --stone: #5A5770;
+  --rule: #D9D5E8;
+  --highlight: #8D9CFA;
+  --highlight-soft: #B4BEFC;
+  --marker: #C9CFFD;
+  --on-dark: #CFCCE0;
+  --focus: #4B3FD1;
 
   --font: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --wide: 112;
@@ -106,9 +108,9 @@ p { max-width: var(--measure); }
 .section { padding: clamp(64px, 9vw, 112px) 0; }
 .section + .section { border-top: 1px solid var(--rule); }
 .section-mist { background: var(--mist); border-top: 0 !important; }
-.section-ink { background: var(--ledger); color: var(--paper); border-top: 0 !important; }
+.section-ink { background: var(--ink); color: var(--paper); border-top: 0 !important; }
 .section-ink a { color: var(--paper); }
-.section-ink .muted, .section-ink .lede { color: #C9D7D0; }
+.section-ink .muted, .section-ink .lede { color: var(--on-dark); }
 .section-head { max-width: 44rem; margin-bottom: 48px; }
 .section-head h2 + p { margin-top: 16px; }
 
@@ -127,14 +129,14 @@ p { max-width: var(--measure); }
 .todo li { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: baseline; padding: 11px 0; border-top: 1px solid var(--mist); font-size: 1rem; }
 .todo .task { padding: 1px 3px; margin: 0 -3px; }
 .todo .done .task {
-  background-image: linear-gradient(100deg, rgba(243,221,63,0) 0.6%, var(--highlight) 2.2%, var(--highlight) 97%, rgba(243,221,63,0) 99%);
+  background-image: linear-gradient(100deg, rgba(201,207,253,0) 0.6%, var(--marker) 2.2%, var(--marker) 97%, rgba(201,207,253,0) 99%);
   background-repeat: no-repeat; background-size: 100% 82%; background-position: 0 70%;
   box-decoration-break: clone; -webkit-box-decoration-break: clone;
 }
 .todo .who { font-size: 0.8125rem; color: var(--stone); white-space: nowrap; }
 .todo .done .who { color: var(--ledger); font-weight: 600; }
 .todo-total { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-top: 2px solid var(--ink); margin-top: 6px; padding-top: 14px; }
-.todo-total span { white-space: nowrap; }
+
 .todo-total strong { white-space: nowrap; font-stretch: 112%; font-variation-settings: 'wdth' 112; font-size: 1.75rem; font-weight: 800; line-height: 1; }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -160,14 +162,14 @@ p { max-width: var(--measure); }
 /* Two arms */
 .arms { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .arm { padding: 36px 32px; border-radius: 10px; display: flex; flex-direction: column; gap: 14px; }
-.arm-consult { background: var(--ledger); color: var(--paper); }
-.arm-consult .muted { color: #C9D7D0; }
+.arm-consult { background: var(--ink); color: var(--paper); }
+.arm-consult .muted { color: var(--on-dark); }
 .arm-consult a:not(.btn) { color: var(--paper); }
 .arm-data { background: var(--paper); border: 1px solid var(--ink); }
 .arm .arm-name { font-weight: 600; font-size: 0.9375rem; }
 .arm h3 { font-size: 1.625rem; }
 .arm ul { list-style: none; margin-top: 4px; }
-.arm li { padding: 8px 0; border-top: 1px solid rgba(127,140,134,.35); }
+.arm li { padding: 8px 0; border-top: 1px solid rgba(141,156,250,.3); }
 .arm .push { margin-top: auto; padding-top: 10px; }
 .arm-consult .btn { background: var(--highlight); color: var(--ink); }
 .arm-consult .btn:hover { background: var(--highlight-soft); color: var(--ink); }
@@ -221,7 +223,7 @@ p { max-width: var(--measure); }
 .field .opt { font-weight: 400; color: var(--stone); }
 .field input, .field select, .field textarea {
   width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
-  background: var(--paper); border: 1px solid #A9B7B0; border-radius: 6px; padding: 12px 14px;
+  background: var(--paper); border: 1px solid #B3AECB; border-radius: 6px; padding: 12px 14px;
 }
 .field textarea { min-height: 128px; resize: vertical; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--focus); outline-offset: 0; border-color: var(--focus); }
@@ -243,14 +245,14 @@ p { max-width: var(--measure); }
 .ask button:hover { border-color: var(--ink); }
 
 /* Footer */
-.site-footer { background: var(--ink); color: #C9D7D0; padding: 56px 0 40px; font-size: 0.9375rem; }
+.site-footer { background: var(--ink); color: var(--on-dark); padding: 56px 0 40px; font-size: 0.9375rem; }
 .site-footer a { color: var(--paper); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
 .footer-grid .wordmark { color: var(--paper); display: inline-block; margin-bottom: 10px; }
 .footer-grid h2 { font-size: 0.9375rem; font-weight: 600; font-stretch: 100%; font-variation-settings: 'wdth' 100; letter-spacing: 0; color: var(--paper); margin-bottom: 10px; }
 .footer-grid ul { list-style: none; display: grid; gap: 6px; }
-.footer-base { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(201,215,208,.2); }
+.footer-base { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(207,204,224,.2); }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* Articles (blog, case study, about) */
