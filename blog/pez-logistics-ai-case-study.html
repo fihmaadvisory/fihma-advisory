@@ -28,10 +28,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+<noscript></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,103 +41,45 @@
   "mainEntityOfPage": "https://fihmaadvisory.com/blog/pez-logistics-ai-case-study"
 }
 </script>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --cream: #F5F0E8; --warm-white: #FAF8F4; --slate: #1E2530; --slate-mid: #3A4557;
-    --slate-light: #6B7A91; --terracotta: #B5522A; --terracotta-light: #C96B3F;
-    --terracotta-pale: #F2E8E1; --gold: #C49A3C; --border: rgba(30, 37, 48, 0.12);
-    --serif: 'Playfair Display', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
-  }
-  body { font-family: var(--sans); background: var(--warm-white); color: var(--slate); font-size: 17px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
-
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5%; height: 64px; display: flex; align-items: center; justify-content: space-between; }
-  .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; color: var(--slate); letter-spacing: -0.01em; text-decoration: none; }
-  .nav-logo span { color: var(--terracotta); }
-  .nav-links { display: flex; align-items: center; gap: 32px; }
-  .nav-link { font-size: 0.875rem; color: var(--slate-mid); text-decoration: none; transition: color 0.2s; }
-  .nav-link:hover { color: var(--slate); }
-  .nav-cta { background: var(--slate); color: var(--warm-white); padding: 10px 22px; border-radius: 6px; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: background 0.2s; }
-  .nav-cta:hover { background: var(--slate-mid); }
-
-  header.post-head { background: var(--cream); padding: 140px 5% 64px; }
-  .wrap { max-width: 720px; margin: 0 auto; }
-  .post-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terracotta); background: var(--terracotta-pale); padding: 6px 14px; border-radius: 4px; margin-bottom: 20px; }
-  h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 20px; }
-  .byline { font-size: 0.9rem; color: var(--slate-light); }
-  .byline strong { color: var(--slate-mid); font-weight: 500; }
-
-  .summary { margin: -32px auto 0; max-width: 720px; background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
-  .summary div { font-size: 0.85rem; color: var(--slate-mid); line-height: 1.5; }
-  .summary span { display: block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 6px; }
-
-  article { padding: 56px 5% 88px; }
-  article p { margin-bottom: 22px; color: var(--slate-mid); font-weight: 300; }
-  article p.lead { font-size: 1.15rem; color: var(--slate); font-weight: 400; }
-  article h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 48px 0 16px; color: var(--slate); }
-  article ul { margin: 0 0 24px 22px; color: var(--slate-mid); font-weight: 300; }
-  article li { margin-bottom: 8px; padding-left: 4px; }
-  article li::marker { color: var(--terracotta); }
-  article strong { color: var(--slate); font-weight: 500; }
-
-  table { width: 100%; border-collapse: collapse; margin: 8px 0 28px; font-size: 0.95rem; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-  th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--border); }
-  th { background: var(--slate); color: var(--warm-white); font-weight: 500; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
-  td { color: var(--slate-mid); font-weight: 300; }
-  td:first-child { color: var(--slate); font-weight: 500; }
-  tr:last-child td { border-bottom: none; }
-  tr:nth-child(even) td { background: var(--cream); }
-
-  .cta { margin-top: 48px; background: var(--slate); border-radius: 14px; padding: 40px; color: var(--warm-white); }
-  .cta h2 { color: var(--warm-white); margin-top: 0; }
-  .cta p { color: rgba(250,248,244,0.75); }
-  .btn-primary { background: var(--terracotta); color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 1rem; font-weight: 500; display: inline-block; transition: background 0.2s; }
-  .btn-primary:hover { background: var(--terracotta-light); }
-  .back { display: inline-block; margin-top: 36px; font-size: 0.9rem; color: var(--terracotta); text-decoration: none; }
-
-  footer { background: #161C27; color: rgba(250,248,244,0.4); text-align: center; padding: 32px 5%; font-size: 0.85rem; font-weight: 300; }
-  footer a { color: rgba(250,248,244,0.55); text-decoration: none; }
-
-  @media (max-width: 768px) {
-    .nav-links .nav-link { display: none; }
-    header.post-head { padding: 110px 6% 56px; }
-    .summary { grid-template-columns: 1fr 1fr; margin: -28px 6% 0; padding: 24px; }
-    article { padding: 48px 6% 72px; }
-    th, td { padding: 12px; }
-    .cta { padding: 28px; }
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-
-<nav>
-  <a href="/" class="nav-logo">Fihma <span>Advisory</span></a>
-  <div class="nav-links">
-    <a href="/" class="nav-link">Home</a>
-    <a href="/about.html" class="nav-link">About</a>
-    <a href="/blog/" class="nav-link" style="color: var(--slate); font-weight: 500;">Blog</a>
-    <a href="/#contact" class="nav-cta">Book an Audit</a>
-  </div>
-</nav>
-
-<header class="post-head">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
   <div class="wrap">
-    <span class="post-eyebrow">Case Study</span>
-    <h1>How a New Jersey 3PL Owner Saved 40 Hours a Week With AI</h1>
-    <p class="byline">By <strong>Sam Fihma</strong>, Co-Founder · November 2026</p>
+    <a class="wordmark" href="/">Fihma Advisory</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/">AI for your business</a>
+      <a href="/data">Fihma Data</a>
+      <a href="/blog/pez-logistics-ai-case-study.html" aria-current="page">Case study</a>
+      <a href="/about.html">About</a>
+      <a href="/blog/">Blog</a>
+      <a class="btn btn-small" href="/#contact">Book an audit</a>
+    </nav>
   </div>
 </header>
-
-<div class="summary">
-  <div><span>Company</span>Pez Logistics, a 10-person 3PL in New Jersey</div>
-  <div><span>Problem</span>Four systems that didn't talk to each other</div>
-  <div><span>What we built</span>Custom WMS, one AI hub, sales and finance automation</div>
-  <div><span>Result</span>40+ hours a week back, about $15K a year saved</div>
-</div>
-
-<article>
+<main id="main">
+<section class="page-head">
   <div class="wrap">
-    <p class="lead">By rebuilding my logistics company's software around AI in 2026, I got back at least 40 hours a week and cut thousands of dollars in software costs.</p>
+    <p class="byline" style="margin:0 0 14px">Case study</p>
+    <h1>How a New Jersey 3PL Owner Saved 40 Hours a Week With AI</h1>
+    <p class="byline">By Sam Fihma, cofounder. November 2026.</p>
+  </div>
+</section>
+<div class="wrap">
+  <dl class="facts">
+    <dt>Company</dt><dd>Pez Logistics, a 10 person 3PL in New Jersey</dd>
+    <dt>Problem</dt><dd>Four systems that didn't talk to each other</dd>
+    <dt>What we built</dt><dd>Custom warehouse system, one AI hub, sales and finance automation</dd>
+    <dt>Result</dt><dd>40+ hours a week back, about $15K a year saved</dd>
+  </dl>
+  <article class="prose">
+<p class="lead">By rebuilding my logistics company's software around AI in 2026, I got back at least 40 hours a week and cut thousands of dollars in software costs.</p>
     <p>I'm Sam Fihma, cofounder of Fihma Advisory, and before we started helping other businesses put AI to work, I did it for my own. This is the story of how Pez Logistics, a third party logistics (3PL) company in New Jersey, went from disconnected systems and endless clicks to one integrated operation that runs through AI.</p>
 
     <h2>The business before AI</h2>
@@ -213,16 +152,51 @@
       <h2>Why we started Fihma Advisory</h2>
       <p>My brother Max and I started Fihma Advisory because we see a real need for businesses to bring AI into their day to day operations. I've seen what it did for Pez, and we want to help you do the same.</p>
       <p>Every engagement starts with a 30 minute audit, where we learn how your business runs and show you exactly where AI can save you time and money.</p>
-      <a href="/#contact" class="btn-primary">Book your audit →</a>
+      <a href="/#contact" class="btn">Book your audit</a>
     </div>
-
-    <a href="/blog/" class="back">← All posts</a>
+    <p><a href="/blog/">All posts</a></p>
+  </article>
+</div>
+</main>
+<section class="section" style="padding:40px 0">
+  <div class="wrap ask">
+    <p class="muted">Want a second opinion? Ask an AI about us.</p>
+    <div class="ask-buttons">
+      <button type="button" data-ask="chatgpt">ChatGPT</button>
+      <button type="button" data-ask="claude">Claude</button>
+      <button type="button" data-ask="perplexity">Perplexity</button>
+      <button type="button" data-ask="gemini">Gemini</button>
+    </div>
   </div>
-</article>
-
-<footer>
-  <p>© <span class="js-year">2026</span> Fihma Advisory LLC · <a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a> · <a href="tel:+12012890474">(201) 289-0474</a></p>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="/">Fihma Advisory</a>
+        <p>AI consulting and data licensing for owner run businesses in New York.</p>
+      </div>
+      <div>
+        <h2>What we do</h2>
+        <ul>
+          <li><a href="/">AI for your business</a></li>
+          <li><a href="/data">Fihma Data</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Talk to us</h2>
+        <ul>
+          <li><a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></li>
+          <li><a href="tel:+12012890474">(201) 289-0474</a></li>
+          <li><a href="/#contact">Book an audit</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-base">&copy; <span class="js-year">2026</span> Fihma Advisory LLC</p>
+  </div>
 </footer>
-<script>document.querySelectorAll('.js-year').forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
