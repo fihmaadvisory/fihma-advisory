@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1C558CYB9J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1C558CYB9J');
+</script>
+
+<title>How I Built an RFP Tool in a Week That Replaced $112K a Year in Vendors | Fihma Advisory</title>
+<meta name="description" content="How Max Fihma used AI to build an in-house RFP tool that cut response time from over a week to under 10 minutes and replaced $112K a year in software and consulting.">
+<link rel="canonical" href="https://fihmaadvisory.com/blog/rfp-automation-tool-case-study">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fihma Advisory">
+<meta property="og:url" content="https://fihmaadvisory.com/blog/rfp-automation-tool-case-study">
+<meta property="og:title" content="How I Built an RFP Tool in a Week That Replaced $112K a Year in Vendors">
+<meta property="og:description" content="RFPs went from over a week to under 10 minutes. The story of replacing AutoRFP and an outside consultant with a tool built in one week.">
+<meta property="og:image" content="https://fihmaadvisory.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How I Built an RFP Tool in a Week That Replaced $112K a Year in Vendors">
+<meta name="twitter:description" content="RFPs went from over a week to under 10 minutes. The story of replacing AutoRFP and an outside consultant with a tool built in one week.">
+<meta name="twitter:image" content="https://fihmaadvisory.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How I Built an RFP Tool in a Week That Replaced $112K a Year in Vendors",
+  "datePublished": "2026-11-19",
+  "author": { "@type": "Person", "name": "Max Fihma" },
+  "publisher": { "@type": "Organization", "name": "Fihma Advisory", "url": "https://fihmaadvisory.com/" },
+  "image": "https://fihmaadvisory.com/og-image.png",
+  "mainEntityOfPage": "https://fihmaadvisory.com/blog/rfp-automation-tool-case-study"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">Fihma Advisory</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/">AI for your business</a>
+      <a href="https://data.fihmaadvisory.com">Fihma Data</a>
+      <a href="/blog/pez-logistics-ai-case-study.html">Case study</a>
+      <a href="/about.html">About</a>
+      <a href="/blog/">Blog</a>
+      <a class="btn btn-small" href="/#contact">Book an audit</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="byline" style="margin:0 0 14px">Case study</p>
+    <h1>How I Built an RFP Tool in a Week That Replaced $112K a Year in Vendors</h1>
+    <p class="byline">By Max Fihma, cofounder. November 2026.</p>
+  </div>
+</section>
+<div class="wrap">
+  <dl class="facts">
+    <dt>Company</dt><dd>A boutique asset manager in NYC</dd>
+    <dt>Problem</dt><dd>RFPs took over a week, with a $60K software vendor and a $52K consultant</dd>
+    <dt>What I built</dt><dd>An in-house AI RFP tool, built in one week</dd>
+    <dt>Result</dt><dd>RFPs done in under 10 minutes, $112K a year saved</dd>
+  </dl>
+  <article class="prose">
+<p class="lead">In one week, I used AI to build an RFP tool that cut our response time from over a week to under 10 minutes and replaced $112,000 a year in outside software and consulting.</p>
+    <p>I'm Max Fihma, cofounder of Fihma Advisory. Before I helped anyone else put AI to work, I did it at my own desk. This is the story of how a boutique asset manager in NYC stopped paying for RFP help and started answering RFPs in minutes with a tool built in house.</p>
+
+    <h2>The problem</h2>
+    <p>In financial services, winning new business means answering RFPs (requests for proposal) and DDQs (due diligence questionnaires). These are long documents, often hundreds of questions, asking everything about how a firm invests, operates and manages risk.</p>
+    <p>A single RFP used to take us over a week. Most of that time wasn't spent thinking. It was spent searching: digging through old responses for the answer we'd already written a dozen times, copying it over, fixing the formatting, and checking that it was still accurate.</p>
+    <p>To keep up, we were paying for two things:</p>
+    <ul>
+      <li><strong>AutoRFP</strong>, an AI RFP software platform, at about <strong>$60,000 a year</strong></li>
+      <li>An <strong>outside consultant</strong> who helped us fill these out, at about <strong>$52,000 a year</strong></li>
+    </ul>
+    <p>That's $112,000 a year, and RFPs still took days.</p>
+
+    <h2>The turning point</h2>
+    <p>I knew exactly how our RFP process worked and where the time went. So instead of paying for someone else's general purpose product, I built one shaped around how we actually work, using Claude Code, an AI tool that writes and fixes code.</p>
+    <p>It took me one week.</p>
+
+    <h2>What the tool does</h2>
+    <p>The tool is now built into our company's systems and available to the whole firm. Here's how it works:</p>
+    <ul>
+      <li><strong>It reads the document.</strong> Drop in an RFP and it parses out every question automatically.</li>
+      <li><strong>It searches our answer base.</strong> We have thousands of approved questions and responses. For each new question, the tool searches by meaning, not just keywords, so it finds the right answer even when the question is worded differently.</li>
+      <li><strong>It gives the top three options.</strong> For every question, it surfaces the three best matching answers so a person can pick the right one in seconds.</li>
+      <li><strong>It can write a new response.</strong> When a question is genuinely new, there's an option to have AI draft an answer.</li>
+      <li><strong>It keeps an audit trail.</strong> Every answer shows who added it, so there's always accountability.</li>
+      <li><strong>It keeps answers fresh.</strong> An internal clock flags answers that need to be reviewed on a regular schedule, so nothing outdated goes out the door.</li>
+      <li><strong>It puts everything back in the original format.</strong> The finished answers go back into the RFP exactly as the client sent it, ready to submit.</li>
+    </ul>
+
+    <h2>The results</h2>
+    <table>
+      <thead><tr><th>What changed</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>Time per RFP</td><td>From over a week to under 10 minutes</td></tr>
+        <tr><td>AutoRFP software</td><td>$60,000 a year saved</td></tr>
+        <tr><td>Outside consultant</td><td>$52,000 a year saved</td></tr>
+        <tr><td>Total savings</td><td>$112,000 a year</td></tr>
+        <tr><td>Who can use it</td><td>The whole firm</td></tr>
+        <tr><td>Answer quality</td><td>Audit trail and scheduled reviews on every answer</td></tr>
+      </tbody>
+    </table>
+
+    <h2>It wasn't perfect</h2>
+    <p>The week wasn't smooth. A few problems almost stopped it:</p>
+    <ul>
+      <li><strong>Every RFP is formatted differently.</strong> Some come as Word documents with tables inside tables, some as spreadsheets with merged cells, some as PDFs. The first version missed questions hidden in tables and treated three part questions as one. I rebuilt the reader so it handles each format on its own terms.</li>
+      <li><strong>Search matched words, not meaning.</strong> Early on, a question about "sustainability integration" wouldn't find our answer on "ESG policy," even though they ask the same thing. Switching to search by meaning, and showing the top three matches instead of one, fixed it.</li>
+      <li><strong>Putting answers back broke the formatting.</strong> The first time I filled in a client's document, fonts changed and tables shifted. In a field where presentation matters, that's not acceptable. I reworked it so answers are written into the original file without touching anything else.</li>
+    </ul>
+    <p>Each of these would have been a support ticket and a long wait with a software vendor. Building it myself meant I could fix them the same day.</p>
+
+    <h2>What this means for your business</h2>
+    <p>Most businesses are paying for software that does 80% of what they need and 100% of what they don't. They pay for outside help to fill the gaps. And they still lose hours to work that's mostly searching, copying and reformatting.</p>
+    <p>That's exactly the kind of work AI can take off your plate. A tool built around how your business actually runs can cost less than what you're paying today and do the job better. You don't need to be technical to get there. That's the part we handle.</p>
+
+    <div class="cta">
+      <h2>Why we started Fihma Advisory</h2>
+      <p>My brother Sam and I started Fihma Advisory because we've both seen what AI can do when it's built around a real business. Sam rebuilt his logistics company around it. I did it for RFPs. We want to help you do the same.</p>
+      <p>Every engagement starts with a 30 minute audit, where we learn how your business runs and show you exactly where AI can save you time and money.</p>
+      <a href="/#contact" class="btn">Book your audit</a>
+    </div>
+    <p><a href="/blog/">All posts</a></p>
+  </article>
+</div>
+</main>
+<section class="section" style="padding:40px 0">
+  <div class="wrap ask">
+    <p class="muted">Want a second opinion? Ask an AI about us.</p>
+    <div class="ask-buttons">
+      <button type="button" data-ask="chatgpt">ChatGPT</button>
+      <button type="button" data-ask="claude">Claude</button>
+      <button type="button" data-ask="perplexity">Perplexity</button>
+      <button type="button" data-ask="gemini">Gemini</button>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="/">Fihma Advisory</a>
+        <p>AI consulting and data licensing for owner run businesses.</p>
+      </div>
+      <div>
+        <h2>What we do</h2>
+        <ul>
+          <li><a href="/">AI for your business</a></li>
+          <li><a href="https://data.fihmaadvisory.com">Fihma Data</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Talk to us</h2>
+        <ul>
+          <li><a href="mailto:max@fihmaadvisory.com">max@fihmaadvisory.com</a></li>
+          <li><a href="tel:+12012890474">(201) 289-0474</a></li>
+          <li><a href="/#contact">Book an audit</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-base">&copy; <span class="js-year">2026</span> Fihma Advisory LLC</p>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
