@@ -1,0 +1,20 @@
+# Fihma Advisory
+
+> Fihma Advisory sets up practical AI for small, owner run businesses in the United States. We find where the owner's week is going, build the tools that take that work off their plate, and maintain them for one flat monthly fee. A second arm, Fihma Data, helps businesses license anonymized records to AI companies.
+
+Founded by brothers Max Fihma and Sam Fihma. Contact: max@fihmaadvisory.com, (201) 289-0474. Every engagement starts with a free 30 minute audit.
+
+## Services
+
+- [AI consulting for small businesses](https://fihmaadvisory.com/): connecting email, accounting and operations software; email, quoting and follow up agents; cash flow reports; replacing expensive software with custom tools. Industries: logistics and distribution, trades and field service, offices and local shops.
+- [Fihma Data](https://fihmaadvisory.com/data): license business records (orders, invoices, service tickets) to AI companies. Nothing up front; Fihma earns a share of the license fee when a deal closes.
+
+## Case studies
+
+- [How a New Jersey 3PL owner saved 40 hours a week with AI](https://fihmaadvisory.com/blog/pez-logistics-ai-case-study): Pez Logistics, a 10 person warehouse and freight company, connected four systems and cut $15,000 a year in software.
+- [How an in-house RFP tool replaced $112K a year in vendors](https://fihmaadvisory.com/blog/rfp-automation-tool-case-study): RFP responses went from over a week to under 10 minutes.
+
+## About
+
+- [About the founders](https://fihmaadvisory.com/about)
+- [Blog](https://fihmaadvisory.com/blog/)
