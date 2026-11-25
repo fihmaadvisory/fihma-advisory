@@ -7,7 +7,7 @@ Founded by brothers Max Fihma and Sam Fihma. Contact: max@fihmaadvisory.com, (20
 ## Services
 
 - [AI consulting for small businesses](https://fihmaadvisory.com/): connecting email, accounting and operations software; email, quoting and follow up agents; cash flow reports; replacing expensive software with custom tools. Industries: logistics and distribution, trades and field service, offices and local shops.
-- [Fihma Data](https://fihmaadvisory.com/data): license business records (orders, invoices, service tickets) to AI companies. Nothing up front; Fihma earns a share of the license fee when a deal closes.
+- [Fihma Data](https://data.fihmaadvisory.com/): license business records (orders, invoices, service tickets) to AI companies. Nothing up front; Fihma earns a share of the license fee when a deal closes.
 
 ## Case studies
 

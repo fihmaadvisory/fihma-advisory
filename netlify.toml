@@ -10,3 +10,15 @@
   from = "/classes.html"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "/data"
+  to = "https://data.fihmaadvisory.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/data.html"
+  to = "https://data.fihmaadvisory.com/"
+  status = 301
+  force = true
